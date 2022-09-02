@@ -3,6 +3,7 @@ package com.mycom.word;
 public class Word {
 	
 	private int id;
+	
 	private int level;
 	private String word;
 	private String meaning;
@@ -38,6 +39,16 @@ public class Word {
 	}
 	public void setMeaning(String meaning) {
 		this.meaning = meaning;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		String slevel = "";
+		for(int i = 0 ; i < level ; i++) slevel += "*";
+		String str = String.format("%-3s", slevel)
+				+ String.format("%15s", word) + "  " + meaning;
+		return str;
 	}
 	
 }
