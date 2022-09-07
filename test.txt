@@ -4,4 +4,4 @@
 1|pole|기둥, 장대
 1|formerly|이전에, 예전에
 1|transfer|옮기다, 이동하다
-2| strawberry|딸기
+3| wow|대박
