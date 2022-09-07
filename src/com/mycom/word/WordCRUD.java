@@ -176,7 +176,7 @@ public class WordCRUD implements ICRUD{
 			e.printStackTrace();
 		}
 	}
-	
+
 	
 
 	public void searchLevel() {
