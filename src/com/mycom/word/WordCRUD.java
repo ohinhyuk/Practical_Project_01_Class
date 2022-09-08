@@ -186,6 +186,7 @@ public class WordCRUD implements ICRUD{
 		listAll(level);
 	}
 
+	
 	public void searchWord() {
 		// TODO Auto-generated method stub
 		System.out.print("=> 원하는 단어는? ");
