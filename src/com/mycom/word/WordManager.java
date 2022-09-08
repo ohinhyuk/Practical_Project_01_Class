@@ -21,6 +21,7 @@ public class WordManager {
 				System.out.println("프로그램 종료! 또 만나요 ! ");
 				break;
 			}
+			
 			else if(menu == 4) {
 				//create
 				wordCRUD.addItem();
