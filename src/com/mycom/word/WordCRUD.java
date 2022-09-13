@@ -278,6 +278,7 @@ public class WordCRUD implements ICRUD{
 			pr.close();
 			System.out.println("===> 데이터 저장 완료!!!");
 		} catch (IOException e) {
+			
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
