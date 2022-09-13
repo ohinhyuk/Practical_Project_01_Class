@@ -42,7 +42,7 @@ public class WordManager {
 			}
 			else if(menu ==6) {
 				//delete
-				//wordCRUD.deleteItem();
+				wordCRUD.deleteItem();
 			}
 			else if(menu == 7) {
 				wordCRUD.saveFile();

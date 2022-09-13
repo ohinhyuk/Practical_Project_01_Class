@@ -137,6 +137,22 @@ public class WordCRUD implements ICRUD{
 	}
 	*/
 	
+	// delete
+	public void deleteItem() {
+		System.out.print("=> 삭제할 단어 검색 : ");
+		String keyword = s.next();
+		ArrayList<Integer> idlist = this.listAll(keyword);
+		System.out.print("삭제할 번호 선택 : ");
+		int id = s.nextInt();
+		System.out.print("=> 정말로 삭제하실래요?(Y/n) ");
+		s.nextLine();
+		String ans = s.nextLine();
+		if(ans.equalsIgnoreCase("y")) {
+			list.remove(idlist.get(id-1));
+		System.out.print("단어가 삭제되었습니다. ");
+		}else System.out.println("취소되었습니다. ");
+	}
+	
 	//update
 	public void updateItem() {
 		// TODO Auto-generated method stub
@@ -158,9 +174,10 @@ public class WordCRUD implements ICRUD{
 	public ArrayList<Integer> listAll(String keyword) {
 		ArrayList<Integer> idlist = new ArrayList<>();
 		System.out.println("---------------------------");
+		int j = 0;
 		for(int i = 0 ; i < list.size(); ++i) {
 			String word = list.get(i).getWord();
-			int j = 0;
+			
 			if(!word.contains(keyword)) continue;
 			
 			System.out.print( (j+1) + " ");
