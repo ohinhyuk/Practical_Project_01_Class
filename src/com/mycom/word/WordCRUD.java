@@ -148,8 +148,8 @@ public class WordCRUD implements ICRUD{
 		s.nextLine();
 		String ans = s.nextLine();
 		if(ans.equalsIgnoreCase("y")) {
-			list.remove(idlist.get(id-1));
-		System.out.print("단어가 삭제되었습니다. ");
+			list.remove((int)idlist.get(id-1));
+		System.out.println("단어가 삭제되었습니다. ");
 		}else System.out.println("취소되었습니다. ");
 	}
 	
@@ -168,7 +168,7 @@ public class WordCRUD implements ICRUD{
 		Word word = list.get(idlist.get(id-1));
 		word.setMeaning(meaning);
 		
-		System.out.print("단어가 수정되었습니다. ");
+		System.out.println("단어가 수정되었습니다. ");
 	}
 	
 	public ArrayList<Integer> listAll(String keyword) {
