@@ -136,6 +136,31 @@ public class WordCRUD implements ICRUD{
 				
 	}
 	*/
+	
+	//update
+	public void updateItem() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public ArrayList<Integer> listAll(String keyword) {
+		ArrayList<Integer> idlist = new ArrayList<>();
+		System.out.println("---------------------------");
+		for(int i = 0 ; i < list.size(); ++i) {
+			String word = list.get(i).getWord();
+			int j = 0;
+			if(!word.contains(keyword)) continue;
+			
+			System.out.print( (j+1) + " ");
+			System.out.println( list.get(i).toString() );
+			idlist.add(i);
+			j++;
+		}
+		System.out.println("---------------------------");
+		return idlist;
+	}
+	
+	
 	public void loadFile() {
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(fname));
@@ -194,5 +219,7 @@ public class WordCRUD implements ICRUD{
 		String keyword = s.next();
 		listAll(keyword);
 	}
+
+	
 
 }
