@@ -248,6 +248,8 @@ public class WordCRUD implements ICRUD{
 		}
 		
 	}
+
+	/*
 	public void saveFile() {
 		// TODO Auto-generated method stub
 		try {
@@ -264,7 +266,10 @@ public class WordCRUD implements ICRUD{
 	}
 
 	
-
+*/
+	public void saveFile() {
+		
+	}
 	public void searchLevel() {
 		// TODO Auto-generated method stub
 		System.out.print("=> 원하는 레벨은? (1~3)");
