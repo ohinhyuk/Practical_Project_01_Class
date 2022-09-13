@@ -65,6 +65,7 @@ public class WordCRUD implements ICRUD{
 		System.out.println("---------------------------");
 	}
 	
+	/*
 	public ArrayList<Integer> listAll(String keyword) {
 		ArrayList<Integer> idlist = new ArrayList<>();
 		
@@ -134,7 +135,7 @@ public class WordCRUD implements ICRUD{
 				}
 				
 	}
-	
+	*/
 	public void loadFile() {
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(fname));
