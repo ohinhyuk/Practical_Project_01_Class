@@ -23,6 +23,9 @@ CRUD - create , Read(List) [meun 0 , 1 , 4] complete
 
 ### Rest Functions ( Update , Delete , fileSave , Search , fileload + 수준별 단어 보기  [menu 2, 3, 5, 6, 7] )
 
+### data file Screenshot
+<img src="/Screenshot/Screenshot2-8.png" width ="800" height = "400">  
+  
 ### Execution Result
 
 <img src="/Screenshot/Screenshot2-1.png" width = "600" height = "450">
